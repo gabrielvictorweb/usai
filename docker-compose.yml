@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: ./gui/Dockerfile
+    image: 'nodejs'
+    container_name: risa-nodejs
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+  debian:
+    entrypoint: .docker/entrypoint.sh
+    build:
+      context: os
+      dockerfile: Dockerfile
+    image: 'debian'
+    container_name: risa-debian
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1
