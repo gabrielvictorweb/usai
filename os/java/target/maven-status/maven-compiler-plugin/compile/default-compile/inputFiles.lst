@@ -1,0 +1,10 @@
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/controller/ClienteController.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/RestapiApplication.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/controller/PlanosController.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/repository/PagamentoRepository.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/repository/PlanosRepository.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/domain/Planos.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/repository/ClienteRepository.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/controller/PagamentoController.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/domain/Pagamento.java
+/home/gabrielvictor/Projetos/risa/os/java/src/main/java/br/com/fiap/restapi/domain/Cliente.java
