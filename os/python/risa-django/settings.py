@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["10.5.0.6", "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
+    "channels",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -38,7 +39,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "channels",
     # Local
     "webApplicationAnalysis.apps.WebapplicationanalysisConfig",
     "api",
