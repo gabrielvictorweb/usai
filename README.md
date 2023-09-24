@@ -9,7 +9,7 @@
 Em seu terminal de comando, execute os seguintes comandos:
 
 ```
-$ cd pasta-de-downloads/risa
+$ cd pasta-de-downloads/usai
 $ docker-compose build
 $ docker-compose up
 ```
