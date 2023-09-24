@@ -25,8 +25,8 @@ RUN pip3 install --upgrade pip
 RUN pip3 install virtualenv
 RUN pip3 install django==3.1
 RUN pip3 install djangorestframework==3.1
-RUN pip3 install channels===3.0.0
-RUN pip3 install channels_redis===3.2.0
+RUN pip3 install channels==3.0
+RUN pip3 install channels_redis==3.2
 RUN pip3 install markdown
 RUN pip3 install django-filter
 # pip install --upgrade attrs
