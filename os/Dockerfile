@@ -21,10 +21,12 @@ RUN apt-get update && apt-get install -y \
     openjdk-17-jdk \ 
     openjdk-17-jre
 
+RUN pip3 install --upgrade pip
+RUN pip3 install virtualenv
 RUN pip3 install django==3.1
-RUN pip3 install djangorestframework
-RUN pip3 install channels_redis
-RUN pip3 install channels
+RUN pip3 install djangorestframework==3.1
+RUN pip3 install channels===3.0.0
+RUN pip3 install channels_redis===3.2.0
 RUN pip3 install markdown
 RUN pip3 install django-filter
 # pip install --upgrade attrs
