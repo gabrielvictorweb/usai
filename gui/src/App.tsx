@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routes from './routes';
+import { Header } from './components';
+import Fonts from './styles/fonts';
 
 function App() {  
   const [output, setOutput] = React.useState("");
@@ -35,7 +36,7 @@ function App() {
   }
   
   React.useEffect(() => {
-    const connectionString = 'ws://localhost:8000/ws/play/11/';
+    const connectionString = 'ws://10.5.0.6:8000/ws/play/11/';
     const gameSocket = new WebSocket(connectionString);
     
     connect(gameSocket);
@@ -43,10 +44,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <span className="text-1xl font-bold underline">{output}</span>
-      </header>
+      <Header />
+      <Routes />
+      <Fonts />
     </div>
   );
 }
