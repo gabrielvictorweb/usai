@@ -1,18 +1,17 @@
+import React from 'react'
 import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import { Home } from "../pages";
+  createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom'
+import { Home } from '../pages'
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-]);
+  {
+    path: '/',
+    element: <Home />
+  }
+])
 
-const Routes = () => {
-    return <RouterProvider router={router} />;
-}
+const Routes = (): React.ReactElement => <RouterProvider router={router} />
 
-export default Routes;
+export default Routes

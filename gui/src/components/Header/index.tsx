@@ -1,12 +1,12 @@
-import React from 'react';
-import { Logo, HeaderContainer } from './styles';
+import React from 'react'
+import { Logo, HeaderContainer } from './styles'
 
 export const Header: React.FC = () => {
-    return (
-        <HeaderContainer>
-            <nav className="content">
-                <Logo>UISA</Logo>
-            </nav>
-        </HeaderContainer>
-    );
+  return (
+    <HeaderContainer>
+        <nav className="content">
+            <Logo>USAI</Logo>
+        </nav>
+    </HeaderContainer>
+  )
 }
