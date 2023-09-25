@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: ./gui/Dockerfile
     image: 'nodejs'
-    container_name: risa-nodejs
+    container_name: usai-nodejs
     networks:
       vpcbr:
         ipv4_address: 10.5.0.5
@@ -15,7 +15,7 @@ services:
       context: os
       dockerfile: Dockerfile
     image: 'debian'
-    container_name: risa-debian
+    container_name: usai-debian
     networks:
       vpcbr:
         ipv4_address: 10.5.0.6

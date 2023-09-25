@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
 
 # from django.core.asgi import get_asgi_application
 
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "risa-django.settings")
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "usai-django.settings")
 
 # application = get_asgi_application()
 
@@ -23,7 +23,7 @@ from channels.routing import ProtocolTypeRouter, URLRouter
 from channels.auth import AuthMiddlewareStack
 import api.routing
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "risa-django.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "usai-django.settings")
 django.setup()
 
 application = ProtocolTypeRouter(

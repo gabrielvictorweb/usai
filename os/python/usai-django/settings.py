@@ -54,7 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "risa-django.urls"
+ROOT_URLCONF = "usai-django.urls"
 
 TEMPLATES = [
     {
@@ -72,9 +72,9 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = "risa-django.wsgi.application"
+# WSGI_APPLICATION = "usai-django.wsgi.application"
 # Channels
-ASGI_APPLICATION = "risa-django.asgi.application"
+ASGI_APPLICATION = "usai-django.asgi.application"
 
 CHANNEL_LAYERS = {
     "default": {
