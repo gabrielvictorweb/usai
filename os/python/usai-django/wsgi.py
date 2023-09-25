@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "risa-django.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "usai-django.settings")
 
 application = get_wsgi_application()
