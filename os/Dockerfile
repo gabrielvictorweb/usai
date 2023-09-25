@@ -2,7 +2,7 @@ FROM debian:11
 USER root
 WORKDIR $HOME
 
-LABEL maintainer="risa"
+LABEL maintainer="usai"
 
 COPY . .
 
@@ -14,19 +14,14 @@ EXPOSE 8000
 # JAVA PORT
 EXPOSE 8080
 
+# INSTALL PACKAGES REQUIRED TO RUN THE APPLICATION
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     maven \ 
     openjdk-17-jdk \ 
-    openjdk-17-jre
+    openjdk-17-jre \
+    iproute2
 
-RUN pip3 install --upgrade pip
-RUN pip3 install virtualenv
-RUN pip3 install django==3.1
-RUN pip3 install djangorestframework==3.1
-RUN pip3 install channels===3.0.0
-RUN pip3 install channels_redis===3.2.0
-RUN pip3 install markdown
-RUN pip3 install django-filter
-# pip install --upgrade attrs
+# INSTALL PACKAGES REQUIRED TO RUN DJANGO APP
+RUN pip3 install -r python/requirements.txt

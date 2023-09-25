@@ -4,7 +4,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-LABEL maintainer="risa"
+LABEL maintainer="usai"
 
 COPY ./gui .
 
