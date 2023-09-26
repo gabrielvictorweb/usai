@@ -1,7 +1,7 @@
 import React from 'react'
-import Routes from './routes'
-import { Header } from './components'
-import Fonts from './styles/fonts'
+import Routes from 'routes'
+import { Header } from 'components'
+import Fonts from 'styles/fonts'
 
 function App (): React.ReactElement {
   // const [output, setOutput] = React.useState('')
