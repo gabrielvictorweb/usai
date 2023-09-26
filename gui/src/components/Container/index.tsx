@@ -1,16 +1,13 @@
 import React from 'react'
 import { ContainerStyled } from './styles'
+import { type ComponentProps } from 'interfaces/generics'
 
-interface ContainerProps {
-  children: React.ReactNode
-}
-
-export const Container: React.FC<ContainerProps> = ({ children }) => {
+export const Container: React.FC<ComponentProps> = ({ children }) => {
   return (
-        <ContainerStyled>
-            <div className="content">
-                {children}
-            </div>
-        </ContainerStyled>
+    <ContainerStyled>
+      <div className="content">
+        {children}
+      </div>
+    </ContainerStyled>
   )
 }
