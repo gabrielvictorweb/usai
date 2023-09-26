@@ -1,3 +1,4 @@
+![USAI](https://raw.githubusercontent.com/gabrielvictorweb/usai/develop/gui/src/assets/images/jpg/image-github.jpg?raw=true)
 # USAI (Universal Security Analysis Interface)
 
 ## Depêndencias
