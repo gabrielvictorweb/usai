@@ -9,51 +9,51 @@ import jakarta.persistence.Table;
 @Table(name = "tb_pagamento")
 public class Pagamento {
     @Id
-    private Integer idPagmaneto;
+    private Integer idPagamento;
     @Column(nullable = false)
-    private Boolean statuscompra;
+    private Boolean statusCompra;
     @Column(nullable = false)
-    private String metodopagamento;
+    private String metodoPagamento;
 
     public Pagamento(){
 
     }
-    public Pagamento(Integer idPagmaneto, Boolean statuscompra, String metodopagamento) {
-        this.idPagmaneto = idPagmaneto;
-        this.statuscompra = statuscompra;
-        this.metodopagamento = metodopagamento;
+    public Pagamento(Integer idPagamento, Boolean statusCompra, String metodoPagamento) {
+        this.idPagamento = idPagamento;
+        this.statusCompra = statusCompra;
+        this.metodoPagamento = metodoPagamento;
     }
 
-    public Integer getIdPagmaneto() {
-        return idPagmaneto;
+    public Integer getidPagamento() {
+        return idPagamento;
     }
 
-    public void setIdPagmaneto(Integer idPagmaneto) {
-        this.idPagmaneto = idPagmaneto;
+    public void setidPagamento(Integer idPagamento) {
+        this.idPagamento = idPagamento;
     }
 
-    public Boolean getStatuscompra() {
-        return statuscompra;
+    public Boolean getstatusCompra() {
+        return statusCompra;
     }
 
-    public void setStatuscompra(Boolean statuscompra) {
-        this.statuscompra = statuscompra;
+    public void setstatusCompra(Boolean statusCompra) {
+        this.statusCompra = statusCompra;
     }
 
-    public String getMetodopagamento() {
-        return metodopagamento;
+    public String getmetodoPagamento() {
+        return metodoPagamento;
     }
 
-    public void setMetodopagamento(String metodopagamento) {
-        this.metodopagamento = metodopagamento;
+    public void setmetodoPagamento(String metodoPagamento) {
+        this.metodoPagamento = metodoPagamento;
     }
 
     @Override
     public String toString() {
         return "Pagamento{" +
-                "idPagmaneto=" + idPagmaneto +
-                ", statuscompra=" + statuscompra +
-                ", metodopagamento='" + metodopagamento + '\'' +
+                "idPagamento=" + idPagamento +
+                ", statusCompra=" + statusCompra +
+                ", metodoPagamento='" + metodoPagamento + '\'' +
                 '}';
     }
 }
