@@ -31,7 +31,7 @@ public class PagamentoController {
     }
     @PutMapping("{id}")
     public Pagamento atualizar(@RequestBody Pagamento pagamento, @PathVariable int id){
-        pagamento.setIdPagmaneto(id);
+        pagamento.setidPagamento(id);
         return pagamentoRepository.save(pagamento);
     }
     @DeleteMapping("/excluir/{codigo}")
